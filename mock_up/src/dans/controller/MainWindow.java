@@ -12,10 +12,10 @@ import dans.view.Sign;
 
 public class MainWindow {
 	
-	JFrame frame;
-	Sign sign;
-	Road road;
-	Warning warning;
+	private JFrame frame;
+	private Sign sign;
+	private Road road;
+	private Warning warning;
 	
 	public MainWindow() {
 		frame = new JFrame("DANS - DIGITEK's Avalanche Notification System");
