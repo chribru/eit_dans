@@ -33,15 +33,13 @@ public class ReportFetcher {
 	private String fetchReportXML(String urlString){
 		System.out.println(String.format("Attempting to connect to: %s", urlString));
 		HttpURLConnection conn = null;
-		// for debugging reasons - keep getting Internal server error on full path
-		urlString = "http://api01.nve.no/hydrology/forecast/avalanche/v1.0.0/api/AvalancheWarningByRegion/";
-					//http://api01.nve.no/hydrology/forecast/avalanche/v1.0.0/api/AvalancheWarningByRegion/Simple/1/1/
 		String xmlString = null;
 		try {
 			URL url = new URL(urlString);
 			
 			conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
+			conn.setRequestProperty("ACCEPT", "application/json");
 			conn.connect();
 			if (conn.getResponseCode() != 200) {
 				throw new IOException(String.format("%d - %s",conn.getResponseCode(),conn.getResponseMessage()));
