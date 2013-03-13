@@ -10,14 +10,14 @@ public class RouteLabel {
 	private int cost;
 
 	// Resources
-	private int riskLevel;
+	private int riskDistance;
 	
 	// Path of label
 	private int[] path;
 	
 	public RouteLabel() {
 		cost = 0;
-		riskLevel = 0;
+		riskDistance = 0;
 		path = new int[] {};
 	}
 
@@ -28,7 +28,7 @@ public class RouteLabel {
 	
 	public RouteLabel(RouteLabel parent, int nextNode, int arcCost, int arcRisk){
 		this.cost = parent.getCost() + arcCost;
-		this.riskLevel = Math.max(parent.getRiskLevel(), arcRisk);
+		this.riskDistance = parent.getRiskDistance() + arcCost*arcRisk;
 		int[] parentPath = parent.getPath();
 		this.path = new int[parentPath.length + 1];
 		System.arraycopy(parentPath, 0, this.path, 0, parentPath.length);
@@ -47,8 +47,8 @@ public class RouteLabel {
 		return cost;
 	}
 
-	public int getRiskLevel() {
-		return riskLevel;
+	public int getRiskDistance() {
+		return riskDistance;
 	}
 
 	public int[] getPath() {

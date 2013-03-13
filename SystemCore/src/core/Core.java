@@ -7,6 +7,7 @@ import nve.ReportFetcher;
 import routing.IRerouter;
 import routing.LabelRerouter;
 import models.NVERegion;
+import models.RoadLink;
 import models.Repository;
 import models.Road;
 
@@ -29,7 +30,7 @@ public class Core {
 		System.out.println("Fetching new risk forecasts");
 		ArrayList<NVERegion> regions = repository.GetRegions();
 		ReportFetcher fetcher = new ReportFetcher();
-		fetcher.fetchRiskReports(regions);
+		fetcher.fetchRiskReports(this, regions);
 	}
 	
 	public void RiskLevelsChanged() {
@@ -39,14 +40,22 @@ public class Core {
 	
 	private void RerouteRoads() {
 		ArrayList<Road> roads = repository.GetRoads();
+		ArrayList<RoadLink> roadLinks = repository.GetRoadLinks();
 		IRerouter rerouter = new LabelRerouter();
-		rerouter.Reroute(roads);
+		rerouter.Reroute(roads, roadLinks);
 		NotifySigns();
+	}
+	
+
+	public Repository getRepository() {
+		// TODO Auto-generated method stub
+		return this.repository;
 	}
 	
 	private void NotifySigns() {
 		
 	}
+	
 	/**
 	 * @param args
 	 */
@@ -56,6 +65,7 @@ public class Core {
 		core.Start();
 		
 	}
+
 
 	
 

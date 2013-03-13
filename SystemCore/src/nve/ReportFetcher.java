@@ -6,33 +6,45 @@ import java.io.InputStreamReader;
 import java.net.*;
 import java.util.ArrayList;
 
+import core.Core;
+
 import models.NVERegion;
+import models.Repository;
 
 public class ReportFetcher {
 
-	public void fetchRiskReports(ArrayList<NVERegion> regions) {
+	private static final String reportUrl = "http://api01.nve.no/hydrology/forecast/avalanche/v1.0.0/api/AvalancheWarningByRegion/Simple/%d/1/";
+											//http://api01.nve.no/hydrology/forecast/avalanche/v1.0.0/api/AvalancheWarningByRegion/Simple/1/1/
+	public void fetchRiskReports(Core core, ArrayList<NVERegion> regions) {
 		// TODO Auto-generated method stub
 		for (NVERegion region : regions) {
-			fetchRiskReport(region);
+			fetchAndUpdateRiskReport(region);
 		}
-		
+		Repository repo = core.getRepository();
+		repo.updateRegions(regions);
+		core.RiskLevelsChanged();
 	}
 	
-	private void fetchRiskReport(NVERegion region) {
-		String xmlString = fetchReportXML(region.getUrl());
+	private void fetchAndUpdateRiskReport(NVERegion region) {
+		String xmlString = fetchReportXML(String.format(ReportFetcher.reportUrl, region.getId()));
+		NVERegion.parseXmlAndUpdateRegion(xmlString, region);
 	}
 	
 	private String fetchReportXML(String urlString){
-		
-		HttpURLConnection conn;
+		System.out.println(String.format("Attempting to connect to: %s", urlString));
+		HttpURLConnection conn = null;
+		// for debugging reasons - keep getting Internal server error on full path
+		urlString = "http://api01.nve.no/hydrology/forecast/avalanche/v1.0.0/api/AvalancheWarningByRegion/";
+					//http://api01.nve.no/hydrology/forecast/avalanche/v1.0.0/api/AvalancheWarningByRegion/Simple/1/1/
 		String xmlString = null;
 		try {
 			URL url = new URL(urlString);
-
-			conn = (HttpURLConnection) url.openConnection();
 			
+			conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("GET");
+			conn.connect();
 			if (conn.getResponseCode() != 200) {
-				throw new IOException(conn.getResponseMessage());
+				throw new IOException(String.format("%d - %s",conn.getResponseCode(),conn.getResponseMessage()));
 			}
 		
 			// Buffer the result into a string
@@ -45,15 +57,17 @@ public class ReportFetcher {
 			}
 			rd.close();
 		
-			conn.disconnect();
 			xmlString = sb.toString();
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
+			System.out.println(String.format("Could not connect to host: %s", e.getMessage()));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			System.out.println(String.format("Could not connect to host: %s", e.getMessage()));
 		} finally {
-			return xmlString;
+			if(conn != null) {
+				conn.disconnect();
+			}
 		}
+		return xmlString;
 		
 	}
 

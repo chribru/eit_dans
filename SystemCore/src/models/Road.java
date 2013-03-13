@@ -6,15 +6,31 @@ public class Road {
 
 	public static final int MAX_RISK_LEVEL = 5;
 	
+	private int id;
 	private String code;
 	private String name;
 	private RoadStatus status;
 	private int length;
+	private int riskLevel;
+
 	private ArrayList<Integer> regionIds;
-	private ArrayList<Neighbour> neighbours;
 	
-	public ArrayList<Neighbour> getNeighbours() {
-		return neighbours;
+	public Road() {
+		this.regionIds = new ArrayList<Integer>();
+	}
+	
+	public Road(int id, String code, String name, RoadStatus status, int length, int riskLevel){
+		this();
+		this.id = id;
+		this.code = code;
+		this.name = name;
+		this.status = status;
+		this.riskLevel = riskLevel;
+		this.length = length;
+	}
+	
+	public int getId() {
+		return id;
 	}
 
 	public ArrayList<Integer> getRegionIds() {
@@ -56,7 +72,10 @@ public class Road {
 	public enum RoadStatus {Open, Closed, Column}
 
 	public int getRiskLevel() {
-		// TODO Auto-generated method stub
-		return 0;
+		return riskLevel;
+	}
+	
+	public void setRiskLevel(int riskLevel) {
+		this.riskLevel = riskLevel;
 	}
 }
