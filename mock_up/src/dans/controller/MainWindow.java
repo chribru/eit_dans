@@ -19,14 +19,15 @@ public class MainWindow {
 	
 	public MainWindow() {
 		frame = new JFrame("DANS - DIGITEK's Avalanche Notification System");
+		frame.setUndecorated(true);
 		sign = new Sign();
 		road = new Road("E6", "Dovrefjell", RoadStatus.OPEN);
-		warning = new Warning(road, new String[]{"DANS er awesome!", 
-				"2.7m/s", "Lav skredfare"});
+		warning = new Warning(road, new String[]{"Vind: 2.7m/s", "Lav skredfare"});
 		sign.setWarning(warning);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.add(sign);
-		frame.setSize(640, 480);
+		frame.setSize(640, 252);
+//		frame.pack();
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
 		frame.addKeyListener(listener);
@@ -49,7 +50,8 @@ public class MainWindow {
 			case 'C': road.setStatus(RoadStatus.CONVOY); break;
 			case 'S': 
 				road.setStatus(RoadStatus.CLOSED);
-				warning.addWarning("Stengt pga skred", 0);
+				warning.addWarning("Omkjøring via &lt;vei&gt;", 0);
+//				warning.addWarning("", 0);
 				break;
 			case 'A': warning.removeWarning(0); break;
 			}

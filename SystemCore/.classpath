@@ -2,6 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Sindre/Documents/Uni/progstuff/eit_dans/SystemCore/externals/commons-configuration-1.9.jar"/>
+	<classpathentry kind="lib" path="externals/commons-configuration-1.9.jar" sourcepath="externals/commons-configuration-1.9-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

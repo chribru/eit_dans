@@ -27,7 +27,7 @@ public class Warning {
 	
 	public void removeWarning(int index) {
 		if ((index<0) || (index>=warnings.size())) return;
-		warnings.remove(0);
+		warnings.remove(index);
 		pcs.firePropertyChange("Warning", false, true);
 	}
 	
