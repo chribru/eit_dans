@@ -15,6 +15,14 @@ public class NVERegion {
 	public int getId() {
 		return id;
 	}
+	
+	public int getRiskLevel() {
+		return riskLevel;
+	}
+
+	public String getName() {
+		return name;
+	}
 
 	public static void parseXmlAndUpdateRegion(String xml, NVERegion region) {
 		
