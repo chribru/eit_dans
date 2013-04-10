@@ -1,3 +1,2 @@
-roads cannot be closed for other reasons than "skred". rerouting will thus always succeed in "safe areas".
-
-
+parts of road network is not monitored, always consideres "safe"
+veiene vi overvåker er knyttet sammen av road-links, som alltid antas å være trygge
