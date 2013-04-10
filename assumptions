@@ -1,0 +1,3 @@
+parts of road network is not monitored, always consideres "safe"
+veiene vi overvåker er knyttet sammen av road-links, som alltid antas å være trygge
+NVE-regioner må ligge i databasen slik at de kan kobles til veier i databasen. et samarbeid med NVE burde kanskje sikres slik at dette kan oppdateres om regioner endres
