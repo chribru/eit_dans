@@ -18,7 +18,7 @@
       <data key="d5"><![CDATA[sdfsgsgsdgfsgsgh]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="95.0" width="147.0" x="606.5" y="280.5"/>
+          <y:Geometry height="65.0" width="147.0" x="629.8539690016117" y="85.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="32.037109375" x="57.4814453125" y="4.0">Core</y:NodeLabel>
@@ -39,10 +39,10 @@
     <node id="n1">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="126.0" width="194.0" x="98.0" y="265.0"/>
+          <y:Geometry height="70.0" width="233.05120772946862" x="543.8027612721431" y="334.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="89.828125" x="52.0859375" y="4.0">ReportFetcher</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="89.828125" x="71.61154136473431" y="4.0">ReportFetcher</y:NodeLabel>
           <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="125.81640625" x="2.0" y="29.96875">fetchReport(Region)
 start()<y:LabelModel>
               <y:ErdAttributesNodeLabelModel/>
@@ -60,7 +60,7 @@ start()<y:LabelModel>
     <node id="n2">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="113.0" width="189.0" x="100.5" y="443.0"/>
+          <y:Geometry height="62.0" width="189.0" x="246.0" y="343.75"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="130.697265625" x="29.1513671875" y="4.0">GeophoneInterpreter</y:NodeLabel>
@@ -80,7 +80,7 @@ start()<y:LabelModel>
     <node id="n3">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="90.0" width="233.05120772946862" x="332.7243961352657" y="275.5"/>
+          <y:Geometry height="70.0" width="233.05120772946862" x="543.8027612721431" y="228.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="86.18359375" x="73.43380698973431" y="4.0">RiskEvaluator</y:NodeLabel>
@@ -101,7 +101,7 @@ process(RoadsideReport)<y:LabelModel>
     <node id="n4">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="90.0" width="158.88541649454544" x="-62.29845997280631" y="85.0"/>
+          <y:Geometry height="76.0" width="158.88541649454544" x="-42.29845997280631" y="93.78888888888889"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="45.619140625" x="56.63313793477272" y="4.0">Region</y:NodeLabel>
@@ -123,7 +123,7 @@ getCode(): String<y:LabelModel>
     <node id="n5">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="113.0" width="226.0" x="155.79347826086962" y="85.0"/>
+          <y:Geometry height="106.0" width="226.0" x="165.79347826086962" y="85.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="34.650390625" x="95.6748046875" y="4.0">Road</y:NodeLabel>
@@ -147,7 +147,7 @@ GetRiskLevel(): Int<y:LabelModel>
     <node id="n6">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="95.0" width="226.0" x="606.5" y="442.99999999999994"/>
+          <y:Geometry height="95.0" width="226.0" x="236.5" y="218.75"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="121.498046875" x="52.2509765625" y="4.0">RegionalRiskReport</y:NodeLabel>
@@ -170,7 +170,7 @@ getNextWarningTime(): DateTime<y:LabelModel>
     <node id="n7">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="95.0" width="194.0" x="351.0" y="443.0"/>
+          <y:Geometry height="95.0" width="194.0" x="-47.29845997280631" y="218.75"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="99.5546875" x="47.22265625" y="4.0">RoadsideReport</y:NodeLabel>
@@ -191,7 +191,7 @@ getConfidenceLevel(): double<y:LabelModel>
     <node id="n8">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="90.0" width="149.47246376811597" x="441.00000000000006" y="85.0"/>
+          <y:Geometry height="76.0" width="149.47246376811597" x="441.00000000000006" y="85.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="72.888671875" x="38.291895946557986" y="4.0">RoadStatus</y:NodeLabel>
@@ -213,7 +213,7 @@ CONVOY: RoadStatus<y:LabelModel>
     <node id="n9">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="76.0" width="210.9999999999999" x="515.6137814115045" y="-77.73333333333318"/>
+          <y:Geometry height="65.0" width="210.9999999999999" x="565.8539690016119" y="-77.73333333333318"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="60.162109375" x="75.4189453125" y="4.0">IRerouter</y:NodeLabel>
@@ -233,7 +233,7 @@ CONVOY: RoadStatus<y:LabelModel>
     <node id="n10">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="90.0" width="104.0" x="633.8237236312407" y="85.0"/>
+          <y:Geometry height="65.0" width="104.0" x="411.7934782608696" y="-77.73333333333318"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="88.99609375" x="7.501953125" y="4.0">LabelRerouter</y:NodeLabel>
@@ -254,7 +254,7 @@ CONVOY: RoadStatus<y:LabelModel>
     <node id="n11">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="113.0" width="189.0" x="103.0" y="586.0"/>
+          <y:Geometry height="57.0" width="189.0" x="-47.29845997280631" y="346.25"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="146.681640625" x="21.1591796875" y="4.0">GeophoneDataReciever</y:NodeLabel>
@@ -298,7 +298,7 @@ getLength(): int<y:LabelModel>
     <node id="n13">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="90.0" width="80.0" x="16.586956521739125" y="-72.0"/>
+          <y:Geometry height="70.26666666666682" width="80.0" x="-42.29845997280631" y="-72.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="57.455078125" x="11.2724609375" y="4.0">RoadEnd</y:NodeLabel>
@@ -319,7 +319,7 @@ B: RoadEnd<y:LabelModel>
     <edge id="e0" source="n5" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="1.4769049726634762" sy="-11.5" tx="0.0" ty="0.0"/>
+          <y:Path sx="1.4769049726634762" sy="-10.787610619469026" tx="4.763768115941957" ty="7.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="white_diamond" target="none"/>
           <y:BendStyle smoothed="false"/>
@@ -329,9 +329,7 @@ B: RoadEnd<y:LabelModel>
     <edge id="e1" source="n10" target="n9">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="64.70994221973615" ty="-1.2283433133734434">
-            <y:Point x="685.8237236312407" y="6.20869565217393"/>
-          </y:Path>
+          <y:Path sx="0.0" sy="0.0" tx="64.70994221973615" ty="-1.0505567811746555"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="white_delta"/>
           <y:BendStyle smoothed="false"/>
@@ -339,10 +337,9 @@ B: RoadEnd<y:LabelModel>
       </data>
     </edge>
     <edge id="e2" source="n12" target="n13">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-2.795088566827758" sy="-23.130595813204664" tx="-1.0684380032205922" ty="-17.363929146537842"/>
+          <y:Path sx="-2.795088566827758" sy="-23.130595813204664" tx="-1.0684380032205922" ty="-13.556726904037724"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="white_diamond" target="none"/>
           <y:BendStyle smoothed="false"/>
@@ -350,10 +347,9 @@ B: RoadEnd<y:LabelModel>
       </data>
     </edge>
     <edge id="e3" source="n12" target="n13">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-6.645330112721467" sy="15.37181964573253" tx="2.781803542673117" ty="21.13848631239935"/>
+          <y:Path sx="0.0" sy="0.0" tx="2.781803542673117" ty="16.503677461680716"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="white_diamond" target="none"/>
           <y:BendStyle smoothed="false"/>
@@ -361,10 +357,9 @@ B: RoadEnd<y:LabelModel>
       </data>
     </edge>
     <edge id="e4" source="n12" target="n5">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="52.9852858293076" sy="9.478743961352507" tx="52.9852858293076" ty="1.7818035426731171"/>
+          <y:Path sx="62.9852858293076" sy="9.233333333333178" tx="52.9852858293076" ty="1.671426332065048"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="white_diamond" target="none"/>
           <y:BendStyle smoothed="false"/>
@@ -372,10 +367,9 @@ B: RoadEnd<y:LabelModel>
       </data>
     </edge>
     <edge id="e5" source="n12" target="n5">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-68.16898148148144" sy="3.3183574879225546" tx="-68.16898148148144" ty="-4.378582930756835"/>
+          <y:Path sx="-58.16898148148144" sy="2.233333333333178" tx="-68.16898148148144" ty="-4.107343280178978"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="white_diamond" target="none"/>
           <y:BendStyle smoothed="false"/>
@@ -384,10 +378,9 @@ B: RoadEnd<y:LabelModel>
     </edge>
     <edge id="e6" source="n0" target="n9">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-58.88621858849547" sy="-0.9333333333333371" tx="0.0" ty="0.0"/>
+          <y:Path sx="0.0" sy="0.0" tx="31.64603099838814" ty="2.233333333333178"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="white_diamond" target="none"/>
           <y:BendStyle smoothed="false"/>
@@ -396,12 +389,9 @@ B: RoadEnd<y:LabelModel>
     </edge>
     <edge id="e7" source="n1" target="n3">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="1.8378429951686712" ty="6.385668276972581">
-            <y:Point x="305.2920297906598" y="326.8856682769726"/>
-          </y:Path>
+          <y:Path sx="0.0" sy="0.0" tx="1.8378429951686712" ty="4.9666308820897855"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
           <y:BendStyle smoothed="false"/>
@@ -410,10 +400,9 @@ B: RoadEnd<y:LabelModel>
     </edge>
     <edge id="e8" source="n3" target="n0">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="4.155797906601947" ty="-7.5"/>
+          <y:Path sx="47.181401771336255" sy="-0.5" tx="4.155797906601947" ty="-5.13157894736842"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
           <y:BendStyle smoothed="false"/>
@@ -422,7 +411,6 @@ B: RoadEnd<y:LabelModel>
     </edge>
     <edge id="e9" source="n2" target="n3">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -434,7 +422,6 @@ B: RoadEnd<y:LabelModel>
     </edge>
     <edge id="e10" source="n11" target="n2">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -446,10 +433,9 @@ B: RoadEnd<y:LabelModel>
     </edge>
     <edge id="e11" source="n4" target="n5">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.9254753425032334" sy="11.5" tx="0.0" ty="0.0"/>
+          <y:Path sx="0.9254753425032334" sy="9.71111111111111" tx="-0.7934782608696196" ty="3.5"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="white_diamond" target="none"/>
           <y:BendStyle smoothed="false"/>
